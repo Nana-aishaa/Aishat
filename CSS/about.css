@@ -1,0 +1,370 @@
+body, html{
+    height:100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav .links a{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav .links .mainlink{
+    color: red;
+}
+
+.nav .links a:hover{
+    color: red;
+}
+
+.nav .links .button{
+    padding: 8.5px 34px;
+    margin-left: 65px;
+    display: inline-block;
+    padding: 10.5px 36px;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid#e4e6ea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav .links .button:hover{
+    color: red;
+}
+
+.head{
+    padding-top: 60px;
+    /* min-height: 100%; */
+    /* margin-left: 40px; */
+    width: 100%;
+}
+
+.company {
+    background-image: url(../images/first.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(141, 138, 138);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding-top: 5rem;
+}
+
+.company p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.company .pee {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.vision-mission{
+    display: flex;
+}
+
+.vision{
+    margin-right: 10px;
+}
+
+h3{
+    color: blue;
+}
+
+/* footer */
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+}
+
+.footer .footer-content{
+    display: flex;
+    width: 100%;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+.footer .footer-content h2{
+    color: white;
+}
+
+.space .space1{
+    line-height: 40px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-bottom{
+    background-color: #343a40;
+    color: #686868;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-section p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.socials{
+    margin-top: 70px;
+}
+
+.contact{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Responsive*/
+    @media screen and (max-width:768px) and (min-width:426px){
+        .logo img{
+            width: 70px;
+        }
+        
+        .nav{
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px 0 25px;
+            background-color: white;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+    .nav .links{
+        margin-left: 250px;
+    }
+    .nav .links a{
+            margin-right: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+    }
+        
+    .nav .links .mainlink{
+            color: red;
+    }
+        
+    .nav .links a:hover{
+            color: red;
+     }
+        
+    .nav .links .button{
+            padding: 8.5px 34px;
+            margin-left: 65px;
+            display: inline-block;
+            padding: 10.5px 36px;
+            font-size: 14px;
+            color: #000;
+            text-transform: uppercase;
+            border: 1px solid#3f3f3f;
+            font-family: Arial, Helvetica, sans-serif;
+    }
+        
+    .nav .links .button:hover{
+            color: red;
+    }
+
+    .company .pee {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px){
+    .logo img{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        cursor: pointer;
+    }
+    
+    .nav{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px 0 25px;
+        background-color: white;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+.nav .links{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.nav .links a:nth-child(4){
+    position: relative;
+    top: 20px;
+}
+
+.nav .links a:nth-child(5){
+    position: relative;
+    left: 5px;
+}
+    .nav .links a{
+        margin-right: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+    }
+    
+    .nav .links .mainlink{
+        color: red;
+    }
+    
+    .nav .links a:hover{
+        color: red;
+    }
+    
+    .nav .links .button{
+        padding: 8.5px 34px;
+        margin-left: 65px;
+        display: inline-block;
+        padding: 10.5px 36px;
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+        border: 1px solid#3f3f3f;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .nav .links .button:hover{
+        color: red;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+
+    .vision-mission, .amp-vis{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer{
+        background: #303036;
+        color: #d3d3d3;
+    }
+    
+    .footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .footer .footer-content .footer-section{
+        flex: 1;
+        padding: 25px;
+        border: 1px solid white;
+    }
+    
+    .footer .footer-content h2{
+        color: white;
+    }
+    
+    .space .space1{
+        line-height: 40px;
+        font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .footer .footer-bottom{
+        background-color: #343a40;
+        color: #686868;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-section p{
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .socials{
+        margin-top: 70px;
+    }
+    
+    .contact{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
